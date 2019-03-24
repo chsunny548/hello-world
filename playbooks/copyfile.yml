@@ -4,5 +4,5 @@
   tasks:
     - name: copy jar/war onto tomcat serve
       copy:
-        src: **/*.war
+        src: *.war
         dest: /opt/apache-tomcat-8.5.32/webapps
