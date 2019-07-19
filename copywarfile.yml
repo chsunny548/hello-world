@@ -1,8 +1,8 @@
 ---
-- hosts: all 
+- hosts: all
   become: true
-  tasks: 
-    - name: copy jar/war onto tomcat servers
-        copy:
-          src: /op/playbooks/wabapp/target/webapp.war
-          dest: /opt/apache-tomcat-8.5.32/webapps
+  tasks:
+    - name: copy jar/war onto tomcat serve
+      copy:
+        src: ../webapp/target/webapp.war
+        dest: /opt/apache-tomcat-8.5.43/webapps
